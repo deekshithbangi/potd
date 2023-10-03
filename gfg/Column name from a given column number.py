@@ -21,4 +21,4 @@ Your Task:
 You don't need to read input or print anything. Your task is to complete the function colName() which takes the column number N as input and returns the column name represented as a string.
 Expected Time Complexity: O(LogN).
 Expected Auxiliary Space: O(1).
-'''
+''' 

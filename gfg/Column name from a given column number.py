@@ -22,3 +22,17 @@ You don't need to read input or print anything. Your task is to complete the fun
 Expected Time Complexity: O(LogN).
 Expected Auxiliary Space: O(1).
 ''' 
+class Solution:
+    def colName (self, n):
+        d = {i: chr(64+i) for i in range(1,27)}
+        d[0] = 'Z'
+        ans = ''
+        # if n<=26:
+        #     return d[n]
+        while n>0:
+            digit = n % 26 
+            if digit == 0:
+                n -=1
+            ans = d[digit]  + ans
+            n //=26
+        return ans
